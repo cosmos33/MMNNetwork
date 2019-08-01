@@ -27,8 +27,6 @@ NS_ASSUME_NONNULL_BEGIN
     __weak id<MNNetworkProtocol> _networkDelegate;
 }
 
-@property (nullable, nonatomic, strong) NSString *keyPathForObserveSessionTask;
-@property (nullable, nonatomic, strong) NSProgress *progress;
 @property (nullable, nonatomic, copy) MNRequestCompletionBlock completionBlock;
 
 /** 子类重写 进一步处理数据 */

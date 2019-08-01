@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
     s.source       = {:git => 'https://github.com/cosmos33/MMNNetwork.git', :tag => s.version.to_s }
     
     s.ios.deployment_target = '9.0'
-    s.frameworks = 'Foundation', 'MobileCoreServices'
+    s.frameworks = 'Foundation', 'MobileCoreServices', 'SystemConfiguration'
     s.vendored_frameworks = 'Frameworks/**/*.framework'
 
 end

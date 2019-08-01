@@ -12,6 +12,8 @@
 
 #import "MNBaseRequest+Extension.h"
 #import "MNBaseRequest.h"
+#import "MNNetworkReachabilityManager.h"
+#import "MNRequestOperation.h"
 #import "MNURLRequestSerialization.h"
 #import "MNURLResponseSerialization.h"
 #import "MNURLSessionManager.h"

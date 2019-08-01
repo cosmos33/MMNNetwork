@@ -38,8 +38,15 @@ NS_ASSUME_NONNULL_BEGIN
               constructingBodyWithBlock:(nullable void (^)(id <MNMultipartFormData> formData))block
                       completionHandler:(nullable void (^)(id _Nullable responseObject, NSError * _Nullable error))completionHandler;
 
+- (nullable NSURLSessionDataTask *)POST:(NSString *)URLString
+                             parameters:(nullable id)parameters
+                               progress:(nullable void (^)(NSProgress *uploadProgress))uploadProgress
+              constructingBodyWithBlock:(nullable void (^)(id <MNMultipartFormData> formData))block
+                      completionHandler:(nullable void (^)(id _Nullable responseObject, NSError * _Nullable error))completionHandler;
+
 - (nullable NSURLSessionDownloadTask *)download:(NSURLRequest *)request
                                     destination:(nullable NSURL * _Nonnull (^)(NSURL * targetPath, NSURLResponse *response))destination
+                                       progress:(nullable void (^)(NSProgress *downloadProgress))downloadProgress
                               completionHandler:(nullable void (^)(NSURL * _Nullable filePath, NSError * _Nullable error))completionHandler;
 
 @end
