@@ -1,6 +1,6 @@
 //
 //  MNURLResponseSerialization.h
-//  MomoNext
+//  MMNNetwork
 //
 //  Created by MOMO on 2019/5/18.
 //

@@ -1,6 +1,6 @@
 //
 //  MNNetworkReachabilityManager.h
-//  MomoNext
+//  MMNNetwork
 //
 //  Created by MOMO on 2019/7/30.
 //
