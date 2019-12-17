@@ -1,6 +1,6 @@
 //
 //  MNURLSessionManager.h
-//  MomoNext
+//  MMNNetwork
 //
 //  Created by MOMO on 2019/5/15.
 //
@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong, readonly) NSOperationQueue *operationQueue;
 @property (nonatomic, strong, readonly, nullable) NSURL *baseURL;
+
+@property (nonatomic, weak) id <NSURLSessionDelegate> urlSessionDelegate;
 
 @property (nonatomic, strong) MNHTTPRequestSerializer *requestSerializer;
 @property (nonatomic, strong) MNHTTPResponseSerializer *responseSerializer;
